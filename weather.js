@@ -1,3 +1,5 @@
+// This is a test pull from github
+
 const cityInput = document.getElementById("city-input");
 const city = document.getElementById("city");
 const currentDate = document.getElementById("date");
