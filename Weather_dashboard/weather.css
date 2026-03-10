@@ -6,10 +6,7 @@
 
 body {
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    /* height: 100vh; */
-    height: auto;
-    min-height: 100vh;
-    padding: 20px 0;
+    height: 100vh;
     display: flex;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -80,37 +77,4 @@ body {
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
-}
-
-
-@media (max-width: 768px) {
-    .weather-wrapper {
-        grid-template-columns: 1fr; /* Stack main card and details */
-        padding: 20px;
-        border-radius: 20px;
-    }
-
-    /* Shrink that massive 6rem font so it doesn't break the screen */
-    .temp-box h1 {
-        font-size: 4rem;
-    }
-
-    /* Make the search box easier to tap */
-    .search-box {
-        margin-top: 10px;
-    }
-}
-
-/* 3. Extra polish for very small phones */
-@media (max-width: 480px) {
-    .temp-box h1 {
-        font-size: 3.5rem;
-    }
-    
-    .detail-item {
-        flex-direction: column; /* Stack "Feels Like" above the value */
-        align-items: center;
-        text-align: center;
-        gap: 5px;
-    }
 }
